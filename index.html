@@ -3,43 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- This title shows up on Google search results -->
-  <title>Mushfiqur Rahman | Developer Portfolio</title>
+  <title>Md. Mushfiqur Rahman | Portfolio</title>
   <style>
+    :root {
+      --primary-color: #0366d6;
+      --text-color: #24292e;
+      --bg-color: #ffffff;
+      --light-bg: #f6f8fa;
+      --border-color: #e1e4e8;
+    }
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-color);
       line-height: 1.6;
-      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    h1 { color: #0066cc; }
-    .contact-links a {
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: var(--border-color);
+    }
+    h1 { margin: 0 0 10px 0; font-size: 2rem; }
+    h2 { font-size: 1.4rem; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; margin-top: 40px; }
+    .social-links a {
       margin-right: 15px;
-      color: #0066cc;
+      color: var(--primary-color);
       text-decoration: none;
+      font-weight: 500;
     }
-    .contact-links a:hover { text-decoration: underline; }
+    .social-links a:hover { text-decoration: underline; }
+    .news-box {
+      background: var(--light-bg);
+      border: 1px solid var(--border-color);
+      padding: 15px 20px;
+      border-radius: 6px;
+      max-height: 180px;
+      overflow-y: auto;
+      font-size: 0.95rem;
+    }
+    .news-item { margin-bottom: 10px; }
+    .news-date { font-weight: bold; color: #586069; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: #586069;
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Mushfiqur Rahman</h1>
-  <p>Welcome to my portfolio! I am a developer passionate about building web applications and software solutions.</p>
-  
-  <h2>About Me</h2>
-  <p>Add a few sentences about your background, skills, and what you are currently working on.</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Project 1:</strong> A brief description of what you built.</li>
-    <li><strong>Project 2:</strong> A brief description of what you built.</li>
-  </ul>
+  <header>
+    <!-- Replace 'prof_pic.jpg' with an actual link to your profile picture or upload the image to your repository -->
+    <img src="https://via.placeholder.com/150" alt="Md. Mushfiqur Rahman" class="profile-img">
+    <div>
+      <h1>Mushfiqur Rahman</h1>
+      <p>Software Engineer & Developer</p>
+      <p class="social-links">
+        <a href="https://github.com/MushfiqurRahman01" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:mushfiqmushfiq075@gmail.com">Email</a>
+      </p>
+    </div>
+  </header>
 
-  <h2>Connect</h2>
-  <p class="contact-links">
-    <a href="https://github.com/MushfiqurRahman01" target="_blank">GitHub</a>
-    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-  </p>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Science and Engineering student at Independent University, Bangladesh, with a strong interest in technology, problem-solving, and continuous learning. I enjoy understanding how things work, developing my programming skills, and turning ideas into practical solutions.
+
+
+      I’m particularly interested in programming, data structures, and software development, and I’m continuously working to strengthen both my technical and analytical skills. I believe in learning through practice, taking on new challenges, and improving with every project I work on.
+
+
+      I’m currently focused on building a strong foundation in computer science while gaining practical experience through academic projects and personal learning. My goal is to grow into a skilled and dependable technology professional who can create useful, efficient, and meaningful solutions.
+    </p>
+  </section>
+
+  <section>
+    <h2>News & Updates</h2>
+    <div class="news-box">
+      <div class="news-item"><span class="news-date">Oct 2026:</span> Launched my official personal portfolio website on GitHub Pages!</div>
+      <div class="news-item"><span class="news-date">Sep 2026:</span> Started working on exciting new full-stack web projects.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Project One:</strong> A full-stack web application built using modern JavaScript and backend frameworks. <a href="#">[Code]</a></li>
+      <li><strong>Project Two:</strong> A utility software tool designed to automate developer workflows. <a href="#">[Code]</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science in Computer Science and Engineering</strong><br>
+    University Name [Year – Year]</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Mushfiqur Rahman. Built with GitHub Pages.</p>
+  </footer>
+
 </body>
 </html>
